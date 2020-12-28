@@ -37,6 +37,8 @@ alpha = 0.35
 beta = 0.45
 gamma = 0.2
 wmin = 0.4
+c1=0.4
+c2=0.4
 
 #Initialization of weights used for calculating T(i)
 w1 = 0.3
