@@ -205,7 +205,7 @@ def assign_head(backbone_nodes, ordNodes):
 		diction[ordNodes[i]]=minnode	#for that ordinary node, storing its best cluster head
 	return diction		#returning diction
 
-if __name__ == '__main__':
+if __name__ != '__main__':
 	nodes = []
 	nodes = initNodes_rand(nodes)
 	ordNodes=[]		#initalise list for ordinary nodes(used in backbone repair)
@@ -213,6 +213,6 @@ if __name__ == '__main__':
 	nodes=initNodes_rand(nodes)	#calling the initisation of nodes function
 	nodes, nMax=initNeighbours(nodes)	#callint the assigning of neighbours function
 	step3( nodes)	#Calling STEP 3 for backbone formation| After this function the backbone nodes will be created
-	testing_b( nodes, backbone_nodes, ordNodes)	#calling the function which adds the Black and Grey node in lists
+	nodes, ordNodes, backbone_nodes=testing_b( nodes, backbone_nodes, ordNodes)	#calling the function which adds the Black and Grey node in lists
 	print(ctr)
 	print(ctrg)

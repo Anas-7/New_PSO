@@ -9,7 +9,7 @@ class Node:
         self.eres = 2	#Residual Energy
         self.q = 0 	# random Q
         self.weight = 0		#T(i)
-        self.indg=0		#Index of grey node(if it is grey)
+        # self.indg=0		#Index of grey node(if it is grey)
         self.alive = True	#Node alive or dead
         self.ordInd = -1	#index of ordNodes nodes(if ordNodes node)
         self.einit=2   #initial energy of the node (in Joules)
@@ -54,3 +54,15 @@ cMax = 0 #cost max
 # backbone_nodes=[]	#initalise list for backbone nodes
 # ctr=0	#count of BLACK nodes
 # ctrg=0	#count of GREY nodes
+
+
+#class particle is created whose object stores its index, x coordinate and y coordinate
+class particle:       
+	def __init__(self, x, y):
+		self.ind = 0
+		self.x = x
+		self.y = y
+
+
+sink_x = 200 
+sink_y = 200
