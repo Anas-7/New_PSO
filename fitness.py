@@ -57,8 +57,8 @@ def fx3_func(X,ordNodes,i):
 		fx3 = 0		# error on division by 0 i.e when union area is zero (doesn't enter the for loop)
 	return fx3
 
-if __name__ == "__main__":
-    #temp=fx2_func(X,ordNodes,particles)
-    for i in range(len(X)):
-        #alpha*fx1_func(X,ordNodes,i) + beta*temp[i] + gamma*fx3_func(X,ordNodes,i)
-        print(fx3_func(X,ordNodes,i))
+# if __name__ == "__main__":
+#     #temp=fx2_func(X,ordNodes,particles)
+#     for i in range(len(X)):
+#         #alpha*fx1_func(X,ordNodes,i) + beta*temp[i] + gamma*fx3_func(X,ordNodes,i)
+#         print(fx3_func(X,ordNodes,i))
