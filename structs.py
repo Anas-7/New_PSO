@@ -1,7 +1,7 @@
 import random
 
 class Node:
-    def __init__(self):
+    def __init__(self,x,y):
         #All the attributes of Node Class
         self.ind = 0	#Node index
         self.x = x    #x co-ordinate
@@ -15,11 +15,12 @@ class Node:
         self.einit=2   #initial energy of the node (in Joules)
         self.neighbours = [] #Array for neighbours
         self.cost = 0
+        self.ord = True # true when node is ordinary, false when backbone
+        self.bbInd = -1
     
 radius = 80	#radius of each node
 numNodes = 300	# Total Number of nodes present
-N = 2 # Backnode black(number of nodes from neighbours to be selected as black)
-nodes = []
+N = 5 # Backnode black(number of nodes from neighbours to be selected as black)
 nMax = 0 #initialisation of nMax -> maximum number of neighbour among all nodes
 
 #Initialization of constants
@@ -43,6 +44,7 @@ w2 = 0.4
 w3 = 0.3
 
 cMax = 0 #cost max
+
 
 #Remaining
 # costs = []	# list to store the cost used in T(i)
